@@ -1,0 +1,291 @@
+2020-12-24 00:27:10 [127.0.0.1][-][hneegh3ofpsp7lfssgnc225ijrma90am][error][Error] Error: Class 'app\models\ActiveRecord' not found in H:\OSTemp\OpenServer\domains\localhost\project\models\User.php:16
+Stack trace:
+#0 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\BaseYii.php(293): include()
+#1 [internal function]: yii\BaseYii::autoload()
+#2 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(76): spl_autoload_call()
+#3 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#4 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword()
+#5 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute()
+#6 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes()
+#7 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(62): yii\base\Model->validate()
+#8 H:\OSTemp\OpenServer\domains\localhost\project\controllers\SiteController.php(79): app\models\LoginForm->login()
+#9 [internal function]: app\controllers\SiteController->actionLogin()
+#10 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 H:\OSTemp\OpenServer\domains\localhost\project\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2020-12-24 00:27:10 [127.0.0.1][-][hneegh3ofpsp7lfssgnc225ijrma90am][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'vNFfJuK9-xPLFDxeGJ55o7dBCbv-K48ZnPwTVAZm4lHv42xy1uXLa79tVWt5qQ_SgnZaiblP-DTkrnwydAO4NQ=='
+    'LoginForm' => [
+        'username' => 'Daniil'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    'PHPSESSID' => 'hneegh3ofpsp7lfssgnc225ijrma90am'
+    '_csrf' => '143d06d602faa7c29e7f711f1105fd28089d060666a6cc42a293a9e8de96e2b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S23T4X0xtyi5a7vq57S2Gdw-xRofreZd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tjfuxuk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '230'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/72.0.3815.459'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:81/project/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; PHPSESSID=hneegh3ofpsp7lfssgnc225ijrma90am; _csrf=143d06d602faa7c29e7f711f1105fd28089d060666a6cc42a293a9e8de96e2b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S23T4X0xtyi5a7vq57S2Gdw-xRofreZd%22%3B%7D'
+    'PATH' => 'h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\ext;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\pear;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4;h:\\ostemp\\openserver\\modules\\wget\\bin;h:\\ostemp\\openserver\\modules\\database\\MariaDB-10.3\\bin;h:\\ostemp\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;h:\\ostemp\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OSTemp/OpenServer/domains/localhost'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OSTemp/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OSTemp/OpenServer/domains/localhost/project/web/index.php'
+    'REMOTE_PORT' => '62254'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/project/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/project/web/index.php'
+    'PHP_SELF' => '/project/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1608758830.228
+    'REQUEST_TIME' => 1608758830
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2020-12-24 00:27:43 [127.0.0.1][-][hneegh3ofpsp7lfssgnc225ijrma90am][error][Error] Error: Class 'yii\ActiveRecord' not found in H:\OSTemp\OpenServer\domains\localhost\project\models\User.php:18
+Stack trace:
+#0 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\BaseYii.php(293): include()
+#1 [internal function]: yii\BaseYii::autoload()
+#2 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(76): spl_autoload_call()
+#3 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#4 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword()
+#5 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute()
+#6 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes()
+#7 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(62): yii\base\Model->validate()
+#8 H:\OSTemp\OpenServer\domains\localhost\project\controllers\SiteController.php(79): app\models\LoginForm->login()
+#9 [internal function]: app\controllers\SiteController->actionLogin()
+#10 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 H:\OSTemp\OpenServer\domains\localhost\project\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2020-12-24 00:27:43 [127.0.0.1][-][hneegh3ofpsp7lfssgnc225ijrma90am][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'vNFfJuK9-xPLFDxeGJ55o7dBCbv-K48ZnPwTVAZm4lHv42xy1uXLa79tVWt5qQ_SgnZaiblP-DTkrnwydAO4NQ=='
+    'LoginForm' => [
+        'username' => 'Daniil'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    'PHPSESSID' => 'hneegh3ofpsp7lfssgnc225ijrma90am'
+    '_csrf' => '143d06d602faa7c29e7f711f1105fd28089d060666a6cc42a293a9e8de96e2b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S23T4X0xtyi5a7vq57S2Gdw-xRofreZd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tjfuxuk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '230'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/72.0.3815.459'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:81/project/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; PHPSESSID=hneegh3ofpsp7lfssgnc225ijrma90am; _csrf=143d06d602faa7c29e7f711f1105fd28089d060666a6cc42a293a9e8de96e2b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S23T4X0xtyi5a7vq57S2Gdw-xRofreZd%22%3B%7D'
+    'PATH' => 'h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\ext;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\pear;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4;h:\\ostemp\\openserver\\modules\\wget\\bin;h:\\ostemp\\openserver\\modules\\database\\MariaDB-10.3\\bin;h:\\ostemp\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;h:\\ostemp\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OSTemp/OpenServer/domains/localhost'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OSTemp/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OSTemp/OpenServer/domains/localhost/project/web/index.php'
+    'REMOTE_PORT' => '62255'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/project/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/project/web/index.php'
+    'PHP_SELF' => '/project/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1608758863.884
+    'REQUEST_TIME' => 1608758863
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
+2020-12-24 00:27:50 [127.0.0.1][-][hneegh3ofpsp7lfssgnc225ijrma90am][error][Error] Error: Class 'yii\ActiveRecord' not found in H:\OSTemp\OpenServer\domains\localhost\project\models\User.php:18
+Stack trace:
+#0 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\BaseYii.php(293): include()
+#1 [internal function]: yii\BaseYii::autoload()
+#2 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(76): spl_autoload_call()
+#3 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(48): app\models\LoginForm->getUser()
+#4 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword()
+#5 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute()
+#6 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes()
+#7 H:\OSTemp\OpenServer\domains\localhost\project\models\LoginForm.php(62): yii\base\Model->validate()
+#8 H:\OSTemp\OpenServer\domains\localhost\project\controllers\SiteController.php(79): app\models\LoginForm->login()
+#9 [internal function]: app\controllers\SiteController->actionLogin()
+#10 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#11 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams()
+#12 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction()
+#13 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction()
+#14 H:\OSTemp\OpenServer\domains\localhost\project\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest()
+#15 H:\OSTemp\OpenServer\domains\localhost\project\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2020-12-24 00:27:50 [127.0.0.1][-][hneegh3ofpsp7lfssgnc225ijrma90am][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'T3c_RkrmKl9c5STAFA-44aHdNnA0m4tcmBxDv29nOSIcRQwSfr4aJyicTfV1OM6QlOplQnP__HHgTizZHQJjRg=='
+    'LoginForm' => [
+        'username' => 'Daniil'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    'PHPSESSID' => 'hneegh3ofpsp7lfssgnc225ijrma90am'
+    '_csrf' => '143d06d602faa7c29e7f711f1105fd28089d060666a6cc42a293a9e8de96e2b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"S23T4X0xtyi5a7vq57S2Gdw-xRofreZd\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'tjfuxuk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '230'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ORIGIN' => 'http://localhost:81'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36 OPR/72.0.3815.459'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost:81/project/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; PHPSESSID=hneegh3ofpsp7lfssgnc225ijrma90am; _csrf=143d06d602faa7c29e7f711f1105fd28089d060666a6cc42a293a9e8de96e2b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22S23T4X0xtyi5a7vq57S2Gdw-xRofreZd%22%3B%7D'
+    'PATH' => 'h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\ext;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\pear;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;h:\\ostemp\\openserver\\modules\\php\\PHP_7.4;h:\\ostemp\\openserver\\modules\\wget\\bin;h:\\ostemp\\openserver\\modules\\database\\MariaDB-10.3\\bin;h:\\ostemp\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;h:\\ostemp\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'H:/OSTemp/OpenServer/domains/localhost'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'H:/OSTemp/OpenServer/domains/localhost'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'H:/OSTemp/OpenServer/domains/localhost/project/web/index.php'
+    'REMOTE_PORT' => '62256'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/project/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/project/web/index.php'
+    'PHP_SELF' => '/project/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1608758870.671
+    'REQUEST_TIME' => 1608758870
+    'argv' => [
+        0 => 'r=site%2Flogin'
+    ]
+    'argc' => 1
+]
